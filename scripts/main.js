@@ -1,14 +1,14 @@
 Blocks.duo.ammoTypes.put(Items.lead, new LightningBulletType);
 UnitTypes.mace.weapons.get(0).bullet = new LightningBulletType;
 
-wave = new WaveEffect();
+var wave = new WaveEffect();
 Object.assign(wave, {
 	lifetime: 10,
 	strokeTo: 25,
 	sizeTo: 270
 });
 
-nukeEffect = new MultiEffect(Fx.reactorExplosion, wave);
+var nukeEffect = new MultiEffect(Fx.reactorExplosion, wave);
 
 
 var nuke = new BulletType();	
@@ -25,7 +25,7 @@ Object.assign(nuke, {
 	splashDamageRadius: 280,
 	hitEffect: nukeEffect
 });
-nukeWeapon = new Weapon("self-destruct");
+var nukeWeapon = new Weapon("self-destruct");
 
 Object.assign(nukeWeapon, {
 	shootOnDeath: true,
