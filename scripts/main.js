@@ -34,7 +34,7 @@ Object.assign(nukeWeapon, {
 	shootCone: 180,
 	x: 0,
 	shootY: 0,
-	ejectSound: Fx.none,
+	ejectEffect: Fx.none,
 	shootSound: Sounds.explosion,
 	bullet: nuke
 });
