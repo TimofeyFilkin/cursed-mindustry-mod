@@ -1,6 +1,5 @@
 Blocks.duo.ammoTypes.put(Items.lead, new LightningBulletType);
 UnitTypes.mace.weapons.get(0).bullet = new LightningBulletType;
-UnitTypes.mace.weapons.get(1).bullet = new LightningBulletType;
 
 wave = new WaveEffect();
 Object.assign(wave, {
